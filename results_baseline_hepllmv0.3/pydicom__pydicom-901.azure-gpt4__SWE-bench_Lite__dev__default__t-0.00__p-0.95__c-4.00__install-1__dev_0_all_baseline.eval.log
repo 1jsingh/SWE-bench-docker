@@ -1,0 +1,89 @@
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Task Metadata:
+	- Instance ID: pydicom__pydicom-901
+	- Testbed: pydicom__pydicom__1.3
+	- 
+	- Evaluation Model: azure-gpt4__SWE-bench_Lite__dev__default__t-0.00__p-0.95__c-4.00__install-1__dev_0_all_baseline 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Command: git status --porcelain 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Std. Output:
+ 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Return Code: 0 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Command: git -c advice.detachedHead=false checkout 3746878d8edf1cbda6fbcf35eec69f9ba79301ca 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Std. Output:
+Previous HEAD position was 7241f5d9d Update DICOM dictionary to 2019e edition (#1015)
+HEAD is now at 3746878d8 Convert remaining unittests to pytest (#898)
+ 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Return Code: 0 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Command: git apply -v /home/swe-bench/temp_pydicom__pydicom-901_pred_try.patch 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Std. Output:
+/home/swe-bench/temp_pydicom__pydicom-901_pred_try.patch:67: trailing whitespace.
+    
+Checking patch pydicom/config.py...
+Applied patch pydicom/config.py cleanly.
+warning: 1 line adds whitespace errors.
+ 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Return Code: 0 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Command: git apply -v -R /home/swe-bench/temp_pydicom__pydicom-901_pred_try.patch 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Std. Output:
+Checking patch pydicom/config.py...
+Applied patch pydicom/config.py cleanly.
+ 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Return Code: 0 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Command: git apply -v /home/swe-bench/temp_pydicom__pydicom-901_pred.patch 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Std. Output:
+/home/swe-bench/temp_pydicom__pydicom-901_pred.patch:67: trailing whitespace.
+    
+Checking patch pydicom/config.py...
+Applied patch pydicom/config.py cleanly.
+warning: 1 line adds whitespace errors.
+ 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Return Code: 0 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Command: git apply -v /home/swe-bench/temp_pydicom__pydicom-901_test.patch 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Std. Output:
+Checking patch pydicom/tests/test_config.py...
+Applied patch pydicom/tests/test_config.py cleanly.
+ 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Return Code: 0 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n pydicom__pydicom__1.3 pytest -rA --tb=no -p no:cacheprovider pydicom/tests/test_config.py;
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Command: conda run -n pydicom__pydicom__1.3 pytest -rA --tb=no -p no:cacheprovider pydicom/tests/test_config.py 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Std. Output:
+ERROR conda.cli.main_run:execute(124): `conda run pytest -rA --tb=no -p no:cacheprovider pydicom/tests/test_config.py` failed. (See above for error)
+============================= test session starts ==============================
+platform linux -- Python 3.6.13, pytest-7.0.1, pluggy-1.0.0
+rootdir: /home/swe-bench/pydicom__pydicom
+collected 5 items
+
+pydicom/tests/test_config.py FEFEFEFEFE                                  [100%]
+
+=========================== short test summary info ============================
+ERROR pydicom/tests/test_config.py::TestDebug::test_default - IndexError: lis...
+ERROR pydicom/tests/test_config.py::TestDebug::test_debug_on_handler_null - I...
+ERROR pydicom/tests/test_config.py::TestDebug::test_debug_off_handler_null - ...
+ERROR pydicom/tests/test_config.py::TestDebug::test_debug_on_handler_stream
+ERROR pydicom/tests/test_config.py::TestDebug::test_debug_off_handler_stream
+FAILED pydicom/tests/test_config.py::TestDebug::test_default - assert 1 == 0
+FAILED pydicom/tests/test_config.py::TestDebug::test_debug_on_handler_null - ...
+FAILED pydicom/tests/test_config.py::TestDebug::test_debug_off_handler_null
+FAILED pydicom/tests/test_config.py::TestDebug::test_debug_on_handler_stream
+FAILED pydicom/tests/test_config.py::TestDebug::test_debug_off_handler_stream
+========================= 5 failed, 5 errors in 0.29s ==========================
+
+ 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Return Code: 1 
+
+>>>>> Some Tests Failed
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Test script run successful 

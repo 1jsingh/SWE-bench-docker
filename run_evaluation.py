@@ -73,8 +73,16 @@ def main(
         ValueError: If log_dir is not a directory, testbed is not a directory, or swe_bench_tasks does not exist.
     """
     # Validate arguments
-    if not os.path.exists(log_dir) or not os.path.isdir(log_dir):
-        raise ValueError("--log_dir must exist and point at a directory")
+    # if os.path.exists(log_dir):
+    #     # raise error that log dir already exists
+    #     raise ValueError(f"Log directory {log_dir} already exists. Please specify a new directory.")
+    if not os.path.exists(log_dir):
+        # create the directory if it doesn't exist
+        try:
+            if not os.path.exists(log_dir):
+                os.makedirs(log_dir)
+        except Exception as e:
+            raise ValueError("--log_dir must exist and point at a directory")
 
     tasks = list(get_eval_refs(swe_bench_tasks).values())
 
